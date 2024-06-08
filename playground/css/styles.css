@@ -14,85 +14,66 @@ body {
   font-family: 'Libre Franklin Text';
   background-color: #cdc7e5;
   /* to make each tile centered */
-  padding: 1%;
+  padding: 0.5%;
 }
 
 
-.banner-container {
+
+
+#navlist {
+  overflow: hidden;
   background-color: #29316C;
-  min-height: 20vw;
-  text-align: left;
-  vertical-align: center;
+  transition: 0.4s;
+  position: fixed;
+  width: 120%;
+  top: 0;
+  z-index: 100;
+
+  margin-left: -10%;
+  margin-right: -10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#navlist a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  transition: .3s;
+}
+
+#navlist h1 {
+  color: white;
+  font-size: 64px;
+  transition: .3s;
+  margin-right: 20%;
 }
 
 /* position the logo */
-.banner-logo {
+.navlist-logo {
   float: left;
-  width: 20vw;
+  width: 250px;
   /*margin-top: 0.5vw;*/
   margin-right: 2vw;
   /*margin-left: 2vw;*/
   /*margin-bottom: 0.75vw;*/
+  transition: .3s;
 }
 
-.banner-container h1 {
-  font-family: 'Libre Franklin Title';
-  color: #FFFFFF;
-  font-size: 6vw;
-  margin: 0.5vh;
-}
-
-.banner-container h2 {
-  font-family: 'Libre Franklin Title';
-  color: #FFFFFF;
-  font-size: 4vw;
-  margin-top: 0.5vw;
-  margin-bottom: 3.5vw;
-}
-
-
-.navbar-container {
+.offset {
+  margin-top: 100px;
+  padding-top: 270px;
   text-align: center;
-  /* Center the text within the container */
-  margin-bottom: 2%;
-  justify-content: center;
-  flex-direction: row;
+  transition: .3s;
 }
 
-.navbar-container ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  /* Use flexbox for horizontal alignment */
-  justify-content: center;
-  /* Center the list items horizontally */
-  flex-wrap: wrap;
 
-}
-
-.navbar-container ul li {
-  font-family: 'Libre Franklin Title';
-  font-size: 5vh;
-  padding: 1vw;
-  background-color: #29316C;
-  margin: 1vw;
-  /* Add margin between list items */
-}
-
-#language-tile {
-  background-color: #5A68C0;
-}
-
-#language {
-  color: #FFFFFF;
-}
-
-.navbar-container ul li a:visited,
-.navbar-container ul li a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
 
 
 .info-board {
