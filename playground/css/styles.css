@@ -104,8 +104,8 @@ body {
 }
 
 .border-1 {
-  border-image-source: url(border_1.png);
-  border-image-slice: 25% 25%;
+  border-image-source: url(border_1.svg);
+  border-image-slice: 27% 27%;
   border-image-repeat: stretch;
 }
 
