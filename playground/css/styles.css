@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Libre Franklin Text';
-  background-color: #FFFF;
+  background-color: #cdc7e5;
   /* to make each tile centered */
   padding: 1%;
 }
@@ -97,12 +97,22 @@ body {
 
 .info-board {
   border: 10vw solid red;
-  border-image-source: url(border_2.png);
-  border-image-slice: 20% 20%;
-  border-image-repeat: round;
+  background-color: #FFFFFF;
   position: relative;
   margin-top: 5%;
   z-index: 1;
+}
+
+.border-1 {
+  border-image-source: url(border_1.png);
+  border-image-slice: 25% 25%;
+  border-image-repeat: stretch;
+}
+
+.border-2 {
+  border-image-source: url(border_2.png);
+  border-image-slice: 20% 20%;
+  border-image-repeat: round;
 }
 
 .info-board h1 {
@@ -131,7 +141,7 @@ body {
   font-size: 3vh;
   margin: 0.5%;
   z-index: 3;
-  width: 100%;
+  width: 90%;
 }
 
 .info-board pre {
