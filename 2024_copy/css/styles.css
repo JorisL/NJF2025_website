@@ -1,0 +1,280 @@
+@font-face {
+  font-family: 'Libre Franklin Title';
+  src: url('Libre_Franklin/LibreFranklin-VariableFont_wght.ttf');
+  weight: 600;
+}
+  
+@font-face {
+  font-family: 'Libre Franklin Text';
+  src: url('Libre_Franklin/LibreFranklin-VariableFont_wght.ttf');
+  weight: 400;
+}
+
+body {
+  font-family: 'Libre Franklin Text';
+  background-color: #B4E2F1;
+  /* to make each tile centered */
+  padding: 1%; 
+}
+
+/* position the logo */
+.banner-logo {
+  float: left;
+  width: 20%;
+  margin-top: 0.5vw;;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  /* margin-bottom: 0.75vw; */
+}
+
+.banner-container h1 {
+  font-family: 'Libre Franklin Title';
+  color: #FF48B0;
+  font-size: 6vw;
+  margin: 0.5vh;
+}
+
+.banner-container h2 {
+  font-family: 'Libre Franklin Title';
+  color: #FF48B0;
+  font-size: 4vw;
+  margin-top: 0.5vw;
+  margin-bottom: 3.5vw;
+}
+
+.banner-container {
+  background-image: url('tile-lightblue.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navbar-container {
+  text-align: center; /* Center the text within the container */
+  margin-bottom: 2%;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.navbar-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the list items horizontally */
+  flex-wrap: wrap;
+
+}
+
+.navbar-container ul li {
+  font-family: 'Libre Franklin Title';
+  font-size: 5vh;
+  padding: 1vw;
+  background-image: url('tile-purple.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 1vw; /* Add margin between list items */
+}
+
+#language-tile {
+  background-image: url('tile-pink.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#language {
+  color: #3A50A3;
+}
+
+.navbar-container ul li a:visited,
+.navbar-container ul li a {
+  color: #FF48B0;
+  text-decoration: none;
+}
+
+.info-board {
+  background-image: url(tile-lightblue.png);
+  background-size: 100% 100%;
+  position: relative; 
+  margin-top: 5%;
+  z-index: 1;
+}
+
+.info-board h1 {
+  color: #FF48B0;
+  font-size: 8vw;
+  position: absolute; 
+  float: left;
+  margin: 1vw;
+  /* make the heading responsive */
+  top: -7vw;
+  left: 4%;
+}
+
+.info-board h2 {
+  color: #FF48B0;
+  font-size: 4vh;
+  padding-left: 3%;
+  /* make the heading responsive */
+  /* top: 4vw; */
+  /* left: 4%;  */
+  margin-bottom: -3%;
+  margin-top: -1%;
+}
+
+.info-board p {
+  position: relative;
+  color: #3A50A3;
+  padding: 3%;
+  font-size: 3vh;
+  margin: 0.5%;
+  z-index: 3;
+  width: 70%;
+}
+
+.info-board pre {
+  position: relative;
+  color: #3A50A3;
+  padding-left: 3%;
+  font-size: 2.4vh;
+  margin: 0.5%;
+  z-index: 3;
+  width: 96%;
+  white-space: pre-wrap;
+  font-family: 'Libre Franklin Title';
+}
+
+.info-board a,
+.info-board a:visited {
+  text-decoration: underline;
+  color: #FF48B0;
+}
+
+.info-board img {
+  width: 20%;
+  min-width: 100px;
+  position: absolute;
+  transform: translateY(-80%); 
+  right: 4%; /* Adjust the right spacing as needed */
+  z-index: 2;
+}
+
+.info-board table, th, td {
+  border: 2px solid #3A50A3;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.info-board th {
+  color: #FF48B0;
+}
+
+.info-board td {
+  color: #3A50A3;
+}
+
+.info-board table {
+  position: relative;
+  padding: 3%;
+  font-size: 3vh;
+  margin: 0.5%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+  z-index: 3;
+  width: 70%;
+}
+
+.team-board img {
+  position: relative;
+  float: right;
+  /* width: 20%; */
+  max-width: 20%;
+  max-height: 50vh;
+  height: 40%;
+  z-index: 2;
+  right: 3%;
+} 
+
+.team-board a,
+.team-board a:visited {
+  text-decoration: underline;
+  color: #FF48B0;
+}
+
+.team-board p {
+  position: relative;
+  color: #3A50A3;
+  padding: 3%;
+  font-size: 3vh;
+  margin: 0.5%;
+  z-index: 3;
+  width: 70%;
+}
+
+.team-board h1 {
+  color: #FF48B0;
+  font-size: 8vw;
+  position: absolute; 
+  float: left;
+  margin: 1vw;
+  /* make the heading responsive */
+  top: -7vw;
+  left: 4%;
+}
+
+.team-board {
+  background-image: url(tile-lightblue.png);
+  background-size: 100% 100%;
+  position: relative; 
+  margin-top: 5%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#program-top-p {
+  position: relative;
+  color: #3A50A3;
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 0.5%;
+  font-size: 3vh;
+  margin: 0.5%;
+  z-index: 3;
+  width: 90%;
+}
+
+#program-bot-p {
+  position: relative;
+  color: #3A50A3;
+  padding-top: 0.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  font-size: 3vh;
+  margin: 0.5%;
+  z-index: 3;
+  width: 70%;
+}
+
+#below-table {
+  position: relative;
+  color: #3A50A3;
+  padding: 0% 1% 3% 3%;
+  font-size: 3vh;
+  margin: 0.5%;
+  z-index: 3;
+  width: 70%;
+}
+
+@media only screen and (max-width: 800px) {
+  .team-board {
+    flex-direction: column;
+  }
+
+  .team-board img {
+    max-width: 40%;
+    left: 30%
+  }
+}
