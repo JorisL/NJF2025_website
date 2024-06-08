@@ -110,7 +110,7 @@ body {
 }
 
 .border-2 {
-  border-image-source: url(border_2.png);
+  border-image-source: url(border_2.svg);
   border-image-slice: 20% 20%;
   border-image-repeat: round;
 }
