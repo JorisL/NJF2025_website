@@ -1,0 +1,149 @@
+:root {
+  --delft-blue: #29316C;
+  --razzmatazz: #F61067;
+  --cambridge-blue: #73A580;
+  --jonquil: #F1C40F;
+}
+
+body {
+  grid-template-columns: 1fr min(60rem, 95%) 1fr;
+}
+
+nav a.current {
+  color: var(--cambridge-blue) !important;
+  border-color: var(--cambridge-blue) !important;
+}
+
+body>header {
+  background-color: var(--delft-blue);
+  color: white;
+}
+
+header>nav a,
+header>nav a:visited {
+  color: white;
+}
+
+header>nav a:hover,
+header>nav a[aria-current="page"] {
+  border-color: var(--jonquil);
+  color: var(--jonquil);
+}
+
+body>footer {
+  margin-top: 0rem;
+  border-top: 0px solid var(--border);
+}
+
+
+
+
+
+
+
+.info-board {
+  border: min(85px, 8vw) solid red;
+  background-color: #FFFFFF;
+  position: relative;
+  margin-top: 5%;
+  z-index: 1;
+}
+
+.border-1 {
+  border-image-source: url(border_1.svg);
+  border-image-slice: 27% 27%;
+  border-image-repeat: stretch;
+}
+
+.border-2 {
+  border-image-source: url(border_2.svg);
+  border-image-slice: 20% 20%;
+  border-image-repeat: round;
+}
+
+.info-board h1 {
+  color: var(--delft-blue);
+  font-size: 2rem;
+  margin: 0.5rem;
+  padding-left: 3%;
+  margin-bottom: -3%;
+}
+
+.info-board h2 {
+  color: var(--delft-blue);
+  font-size: 1.5rem;
+  padding-left: 3%;
+  /* make the heading responsive */
+  /* top: 4vw; */
+  /* left: 4%;  */
+  margin-bottom: -3%;
+  margin-top: -1%;
+}
+
+.info-board p {
+  position: relative;
+  color: var(--delft-blue);
+  padding: 3%;
+  font-size: 1.15rem;
+  margin: 0.5%;
+  z-index: 3;
+  width: 100%;
+}
+
+
+
+
+.info-board pre {
+  position: relative;
+  color: #3A50A3;
+  padding-left: 3%;
+  font-size: 2.4vh;
+  margin: 0.5%;
+  z-index: 3;
+  width: 96%;
+  white-space: pre-wrap;
+  font-family: 'Libre Franklin Title';
+}
+
+.info-board a,
+.info-board a:visited {
+  text-decoration: underline;
+  color: #FF48B0;
+}
+
+.info-board img {
+  width: 20%;
+  min-width: 100px;
+  position: absolute;
+  transform: translateY(-80%);
+  right: 4%;
+  z-index: 2;
+}
+
+.info-board table,
+th,
+td {
+  border: 2px solid #3A50A3;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.info-board th {
+  color: #FF48B0;
+}
+
+.info-board td {
+  color: #3A50A3;
+}
+
+.info-board table {
+  position: relative;
+  padding: 3%;
+  font-size: 3vh;
+  margin: 0.5%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+  z-index: 3;
+  width: 70%;
+}
