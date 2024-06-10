@@ -1,8 +1,32 @@
-:root {
+:root,
+::backdrop {
   --delft-blue: #29316C;
   --razzmatazz: #F61067;
   --cambridge-blue: #73A580;
   --jonquil: #F1C40F;
+
+  --info-board-background-color: white;
+  --info-board-text-color: var(--delft-blue);
+  --info-board-pre-background-color: #fafafa;
+  --info-board-pre-text-color: #2d2f40;
+
+  --border-1-url: url(border_1.svg);
+  --border-2-url: url(border_2.svg);
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+
+  :root,
+  ::backdrop {
+    --info-board-background-color: var(--delft-blue);
+    --info-board-text-color: white;
+
+    --border-1-url: url(border_1_dark.svg);
+    --border-2-url: url(border_2_dark.svg);
+    --info-board-pre-background-color: #2d2f40;
+    --info-board-pre-text-color: #fafafa;
+  }
 }
 
 body {
@@ -43,26 +67,28 @@ body>footer {
 
 .info-board {
   border: min(85px, 8vw) solid red;
-  background-color: #FFFFFF;
+  background-color: var(--info-board-background-color);
   position: relative;
   margin-top: 5%;
   z-index: 1;
 }
 
 .border-1 {
-  border-image-source: url(border_1.svg);
+  border-image-source: var(--border-1-url);
   border-image-slice: 27% 27%;
   border-image-repeat: stretch;
 }
 
+
 .border-2 {
-  border-image-source: url(border_2.svg);
+  border-image-source: var(--border-2-url);
   border-image-slice: 20% 20%;
   border-image-repeat: round;
 }
 
+
 .info-board h1 {
-  color: var(--delft-blue);
+  color: var(--info-board-text-color);
   font-size: 2rem;
   margin: 0.5rem;
   padding-left: 3%;
@@ -70,7 +96,7 @@ body>footer {
 }
 
 .info-board h2 {
-  color: var(--delft-blue);
+  color: var(--info-board-text-color);
   font-size: 1.5rem;
   padding-left: 3%;
   /* make the heading responsive */
@@ -82,7 +108,7 @@ body>footer {
 
 .info-board p {
   position: relative;
-  color: var(--delft-blue);
+  color: var(--info-board-text-color);
   padding: 3%;
   font-size: 1.15rem;
   margin: 0.5%;
@@ -93,9 +119,16 @@ body>footer {
 
 
 
+
+
+
+
+
+
 .info-board pre {
   position: relative;
-  color: #3A50A3;
+  color: var(--info-board-pre-text-color);
+  background-color: var(--info-board-pre-background-color);
   padding-left: 3%;
   font-size: 2.4vh;
   margin: 0.5%;
@@ -105,11 +138,11 @@ body>footer {
   font-family: 'Libre Franklin Title';
 }
 
-.info-board a,
+/*.info-board a,
 .info-board a:visited {
   text-decoration: underline;
   color: #FF48B0;
-}
+}*/
 
 .info-board img {
   width: 20%;
@@ -129,11 +162,11 @@ td {
 }
 
 .info-board th {
-  color: #FF48B0;
+  color: #FF0000;
 }
 
 .info-board td {
-  color: #3A50A3;
+  color: #00FF00;
 }
 
 .info-board table {
