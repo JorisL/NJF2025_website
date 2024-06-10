@@ -7,8 +7,12 @@
 
   --info-board-background-color: white;
   --info-board-text-color: var(--delft-blue);
+
   --info-board-pre-background-color: #fafafa;
   --info-board-pre-text-color: #2d2f40;
+
+  --info-board-table-odd-background-color: #fafafa;
+  --info-board-table-even-background-color: #efefef;
 
   --border-1-url: url(border_1.svg);
   --border-2-url: url(border_2.svg);
@@ -22,10 +26,14 @@
     --info-board-background-color: var(--delft-blue);
     --info-board-text-color: white;
 
-    --border-1-url: url(border_1_dark.svg);
-    --border-2-url: url(border_2_dark.svg);
     --info-board-pre-background-color: #2d2f40;
     --info-board-pre-text-color: #fafafa;
+
+    --info-board-table-odd-background-color: #2d2f40;
+    --info-board-table-even-background-color: #232533;
+
+    --border-1-url: url(border_1_dark.svg);
+    --border-2-url: url(border_2_dark.svg);
   }
 }
 
@@ -58,11 +66,6 @@ body>footer {
   margin-top: 0rem;
   border-top: 0px solid var(--border);
 }
-
-
-
-
-
 
 
 .info-board {
@@ -117,32 +120,23 @@ body>footer {
 }
 
 
-
-
-
-
-
-
-
-
 .info-board pre {
   position: relative;
   color: var(--info-board-pre-text-color);
   background-color: var(--info-board-pre-background-color);
   padding-left: 3%;
-  font-size: 2.4vh;
+  font-size: 1.4rem;
   margin: 0.5%;
   z-index: 3;
-  width: 96%;
+  width: 99%;
   white-space: pre-wrap;
-  font-family: 'Libre Franklin Title';
+  font-family: var(--sans-font);
 }
 
-/*.info-board a,
-.info-board a:visited {
-  text-decoration: underline;
-  color: #FF48B0;
-}*/
+
+
+
+
 
 .info-board img {
   width: 20%;
@@ -153,30 +147,30 @@ body>footer {
   z-index: 2;
 }
 
-.info-board table,
-th,
-td {
-  border: 2px solid #3A50A3;
-  border-collapse: collapse;
-  overflow-x: auto;
+
+
+
+
+
+
+.info-board table {
+  margin-left: 3%;
+  z-index: 3;
 }
 
 .info-board th {
-  color: #FF0000;
+  background-color: var(--info-board-table-odd-background-color);
+  color: var(--info-board-text-color);
 }
 
 .info-board td {
-  color: #00FF00;
+  color: var(--info-board-text-color);
 }
 
-.info-board table {
-  position: relative;
-  padding: 3%;
-  font-size: 3vh;
-  margin: 0.5%;
-  margin-left: 3%;
-  margin-bottom: 3%;
-  margin-right: 3%;
-  z-index: 3;
-  width: 70%;
+.info-board tr:nth-child(odd) {
+  background-color: var(--info-board-table-odd-background-color);
+}
+
+.info-board tr:nth-child(even) {
+  background-color: var(--info-board-table-even-background-color);
 }
