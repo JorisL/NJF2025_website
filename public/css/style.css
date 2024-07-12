@@ -16,6 +16,7 @@
 
   --border-1-url: url(border_1.svg);
   --border-2-url: url(border_2.svg);
+  --border-3-url: url(border_3.svg);
 }
 
 /* Dark theme */
@@ -34,6 +35,7 @@
 
     --border-1-url: url(border_1_dark.svg);
     --border-2-url: url(border_2_dark.svg);
+    --border-3-url: url(border_3_dark.svg);
   }
 }
 
@@ -89,6 +91,11 @@ body>footer {
   border-image-repeat: round;
 }
 
+.border-3 {
+  border-image-source: var(--border-3-url);
+  border-image-slice: 25% 25%;
+  border-image-repeat: round;
+}
 
 .info-board h1 {
   color: var(--info-board-text-color);
