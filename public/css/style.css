@@ -141,7 +141,13 @@ body>footer {
 }
 
 
-
+.info-board ul,
+.info-board header>nav ol {
+  padding: 10%;
+  margin-top: -12%;
+  margin-bottom: -12%;
+  color: var(--info-board-text-color);
+}
 
 
 
