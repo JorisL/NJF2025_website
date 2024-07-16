@@ -73,36 +73,39 @@ body>footer {
 
 
 .info-board {
-  border: min(85px, 8vw) solid red;
   background-color: var(--info-board-background-color);
   position: relative;
-  margin-top: 5%;
+  margin-top: 3%;
+  padding: min(50px, 8vw);
   z-index: 1;
 }
 
 .border-1 {
-  border-image-source: var(--border-1-url);
-  border-image-slice: 27% 27%;
-  border-image-repeat: stretch;
+  border-image:
+    var(--border-1-url)
+    27%/min(50px, 8vw)/0
+    stretch;
 }
 
-
 .border-2 {
-  border-image-source: var(--border-2-url);
-  border-image-slice: 20% 20%;
-  border-image-repeat: round;
+  border-image:
+    var(--border-2-url)
+    20%/min(60px, 9vw)/0
+    round;
 }
 
 .border-3 {
-  border-image-source: var(--border-3-url);
-  border-image-slice: 25% 25%;
-  border-image-repeat: round;
+  border-image:
+    var(--border-3-url)
+    25%/min(75px, 12vw)/0
+    round;
 }
 
 .border-4 {
-  border-image-source: var(--border-4-url);
-  border-image-slice: 33% 33%;
-  border-image-repeat: stretch;
+  border-image:
+    var(--border-4-url)
+    33%/min(110px, 16vw)/0
+    stretch;
 }
 
 .info-board h1 {
