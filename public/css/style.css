@@ -83,7 +83,7 @@ body>footer {
 .border-1 {
   border-image:
     var(--border-1-url)
-    27%/min(50px, 8vw)/0
+    49%/min(90px, 13vw)/0
     stretch;
 }
 
