@@ -21,7 +21,7 @@
   --border-1-url: url(border_1.svg);
   --border-2-url: url(border_2.svg);
   --border-3-url: url(border_3.svg);
-  --border-4-url: url(border_4.svg);
+  --border-4-url: url(border_4a.svg);
 }
 
 /* Dark theme */
@@ -43,7 +43,7 @@
     --border-1-url: url(border_1_dark.svg);
     --border-2-url: url(border_2_dark.svg);
     --border-3-url: url(border_3_dark.svg);
-    --border-4-url: url(border_4_dark.svg);
+    --border-4-url: url(border_4a_dark.svg);
   }
 }
 
@@ -119,8 +119,8 @@ body>footer {
 .border-4 {
   border-image:
     var(--border-4-url)
-    33%/min(110px, 16vw)/0
-    stretch;
+    36%/min(110px, 16vw)/0
+    round;
 }
 
 .info-board h1 {
