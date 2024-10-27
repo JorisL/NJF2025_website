@@ -7,7 +7,16 @@
 ::backdrop {
   --delft-blue: #29316C;
   --columbia-blue: #c7d8e5;
-  --accent: #62796F;
+
+  --accent_light: #c7d8e5;
+  --accent_dark: #3d49a6;
+
+  --header-background-color: white;
+  --header-text-color: var(--delft-blue);
+  --header-button-background-color: var(--delft-blue);
+  --header-button-text-color: white;
+  --header-button-text-current-color: var(--accent_light);
+  --header-button-text-hoover-color: var(--accent_light);
 
   --info-board-background-color: white;
   --info-board-text-color: var(--delft-blue);
@@ -17,6 +26,8 @@
 
   --info-board-table-odd-background-color: #fafafa;
   --info-board-table-even-background-color: #efefef;
+
+  --url-color: var(accent_dark);
 
   --border-1-url: url(border_1.svg);
   --border-2-url: url(border_2.svg);
@@ -29,7 +40,12 @@
 
   :root,
   ::backdrop {
-    --accent: #D9E4C6;
+    --header-background-color: var(--delft-blue);
+    --header-text-color: white;
+    --header-button-background-color: white;
+    --header-button-text-color: var(--delft-blue);
+    --header-button-text-current-color: var(--accent_dark);
+    --header-button-text-hoover-color: var(--accent_dark);
 
     --info-board-background-color: var(--delft-blue);
     --info-board-text-color: white;
@@ -39,6 +55,8 @@
 
     --info-board-table-odd-background-color: #2d2f40;
     --info-board-table-even-background-color: #232533;
+
+    --url-color: var(--accent_light);
 
     --border-1-url: url(border_1_dark.svg);
     --border-2-url: url(border_2_dark.svg);
@@ -53,33 +71,46 @@ body {
 
 a,
 a:visited {
-  color: var(--accent);
+  color: var(--url-color);
+}
+
+nav a.current {
+  color: var(--header-button-text-current-color) !important;
+  border-color: transparent;
+}
+
+body>header {
+  background-color: var(--header-background-color);
+  color: var(--header-text-color);
+  padding: 0 0.5rem 0.3rem 0.5rem;
 }
 
 body>header>h1 {
   font-family: 'DancingScript';
-}
-
-nav a.current {
-  color: var(--columbia-blue) !important;
-  border-color: var(--columbia-blue) !important;
-}
-
-body>header {
-  background-color: var(--delft-blue);
-  color: white;
+  font-weight: normal;
 }
 
 header>nav a,
 header>nav a:visited {
-  color: white;
+  background-color: var(--header-button-background-color);
+  color: var(--header-button-text-color);
 }
 
 header>nav a:hover,
 header>nav a[aria-current="page"] {
-  border-color: var(--columbia-blue);
-  color: var(--columbia-blue);
+  border-color: transparent;
+  color: var(--header-button-text-hoover-color);
 }
+
+@media only screen and (max-width: 720px) {
+  header>nav a,
+  header>nav a:visited {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.3rem 1rem 0.3rem;
+  }
+}
+
 
 body>footer {
   margin-top: 0rem;
