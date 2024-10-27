@@ -1,9 +1,13 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('DancingScript-VariableFont_wght.ttf');
+}
+
 :root,
 ::backdrop {
   --delft-blue: #29316C;
-  --razzmatazz: #F61067;
-  --cambridge-blue: #73A580;
-  --jonquil: #F1C40F;
+  --columbia-blue: #c7d8e5;
+  --accent: #62796F;
 
   --info-board-background-color: white;
   --info-board-text-color: var(--delft-blue);
@@ -25,6 +29,8 @@
 
   :root,
   ::backdrop {
+    --accent: #D9E4C6;
+
     --info-board-background-color: var(--delft-blue);
     --info-board-text-color: white;
 
@@ -45,9 +51,18 @@ body {
   grid-template-columns: 1fr min(60rem, 95%) 1fr;
 }
 
+a,
+a:visited {
+  color: var(--accent);
+}
+
+body>header>h1 {
+  font-family: 'DancingScript';
+}
+
 nav a.current {
-  color: var(--cambridge-blue) !important;
-  border-color: var(--cambridge-blue) !important;
+  color: var(--columbia-blue) !important;
+  border-color: var(--columbia-blue) !important;
 }
 
 body>header {
@@ -62,8 +77,8 @@ header>nav a:visited {
 
 header>nav a:hover,
 header>nav a[aria-current="page"] {
-  border-color: var(--jonquil);
-  color: var(--jonquil);
+  border-color: var(--columbia-blue);
+  color: var(--columbia-blue);
 }
 
 body>footer {

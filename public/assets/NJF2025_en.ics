@@ -3,9 +3,9 @@ VERSION:2.0
 PRODID:-//ical.marudot.com//iCal Event Maker
 CALSCALE:GREGORIAN
 BEGIN:VTIMEZONE
-TZID:Europe/Brussels
-LAST-MODIFIED:20231222T233358Z
-TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Brussels
+TZID:Europe/Amsterdam
+LAST-MODIFIED:20240422T053450Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Amsterdam
 X-LIC-LOCATION:Europe/Brussels
 BEGIN:DAYLIGHT
 TZNAME:CEST
@@ -23,12 +23,13 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20240706T101736Z
+DTSTAMP:20241027T134301Z
 UID:1720260993102-19950@ical.marudot.com
 DTSTART;VALUE=DATE:20250529
 DTEND;VALUE=DATE:20250602
 SUMMARY:Dutch Juggling Convention 2025
 URL:https://www.nederlandsjongleerfestival.nl/en
 DESCRIPTION:Dutch Juggling Convention 2025
+LOCATION:Sporthal De Zeine\, Olympiaweg 12A\, 5143 NA\, Waalwijk
 END:VEVENT
 END:VCALENDAR
