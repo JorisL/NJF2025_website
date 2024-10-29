@@ -32,7 +32,7 @@
   --border-1-url: url(border_1.svg);
   --border-2-url: url(border_2.svg);
   --border-3-url: url(border_3.svg);
-  --border-4-url: url(border_4a.svg);
+  --border-4-url: url(border_4b.svg);
 }
 
 /* Dark theme */
@@ -61,7 +61,7 @@
     --border-1-url: url(border_1_dark.svg);
     --border-2-url: url(border_2_dark.svg);
     --border-3-url: url(border_3_dark.svg);
-    --border-4-url: url(border_4a_dark.svg);
+    --border-4-url: url(border_4b_dark.svg);
   }
 }
 
@@ -150,7 +150,7 @@ body>footer {
 .border-4 {
   border-image:
     var(--border-4-url)
-    36%/min(110px, 16vw)/0
+    34%/min(110px, 16vw)/0
     round;
 }
 
