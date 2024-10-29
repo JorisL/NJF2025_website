@@ -76,7 +76,7 @@ a:visited {
 
 nav a.current {
   color: var(--header-button-text-current-color) !important;
-  border-color: transparent;
+  border-color: var(--header-button-text-current-color) !important;
 }
 
 body>header {
@@ -94,6 +94,7 @@ header>nav a,
 header>nav a:visited {
   background-color: var(--header-button-background-color);
   color: var(--header-button-text-color);
+  border-color: transparent;
 }
 
 header>nav a:hover,
