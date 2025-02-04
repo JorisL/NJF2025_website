@@ -48,61 +48,66 @@
 #emph()[Voorafgaand aan het kopen van een festivalticket dienen deze Algemene Voorwaarden gelezen en geaccepteerd te worden.]
 #v(20pt)
 
+
+#let bold_words = ("(ticket|tickets|toegangsbewijs|toegangsbewijzen|bezoeker|bezoekers|NJF|festival|festivalterrein|programma|algemene voorwaarden)")
+#show regex("(?i)\b" + bold_words + "\b"): set text(weight: "semibold")
+
+
 = Tickets en toegang
 
-- *Tickets* en *toegangsbewijzen* zijn niet terugbetaalbaar noch omruilbaar.
+- Tickets en toegangsbewijzen zijn niet terugbetaalbaar noch omruilbaar.
 
-- In geval van verlies of diefstal van *tickets* en/of *toegangsbewijzen* worden deze niet vervangen noch terugbetaald.
+- In geval van verlies of diefstal van tickets en/of toegangsbewijzen worden deze niet vervangen noch terugbetaald.
 
-- *Bezoekers* jonger dan 16 jaar worden alleen toegelaten tot het *festivalterrein* onder begeleiding van een door de ouders goedgekeurde begeleider (met een leeftijd van minimaal 18 jaar).
+- Bezoekers jonger dan 16 jaar worden alleen toegelaten tot het festivalterrein onder begeleiding van een door de ouders goedgekeurde begeleider (met een leeftijd van minimaal 18 jaar).
 
-- Het *NJF* behoudt zich het recht voor om de identiteit van de *bezoeker* te controleren bij de controle van het *ticket* en/of *toegangsbewijs*. Indien u geen geldig identiteitsbewijs kunt voorleggen, is de beveiliging bevoegd om u de toegang tot het *festivalterrein* te weigeren. Als geldige identificatiedocumenten worden beschouwd: identiteitskaart, paspoort of rijbewijs. Kopieën worden niet geaccepteerd.
+- Het NJF behoudt zich het recht voor om de identiteit van de bezoeker te controleren bij de controle van het ticket en/of toegangsbewijs. Indien u geen geldig identiteitsbewijs kunt voorleggen, is de beveiliging bevoegd om u de toegang tot het festivalterrein te weigeren. Als geldige identificatiedocumenten worden beschouwd: identiteitskaart, paspoort of rijbewijs. Kopieën worden niet geaccepteerd.
 
-- *Tickets* en *toegangsbewijzen* mogen niet gebruikt worden voor commerciële of promotionele doeleinden zonder voorafgaande toestemming van het *NJF*.
+- Tickets en toegangsbewijzen mogen niet gebruikt worden voor commerciële of promotionele doeleinden zonder voorafgaande toestemming van het NJF.
 
-- *Tickets* en *toegangsbewijzen* mogen niet worden doorverkocht zonder de uitdrukkelijke en schriftelijke toestemming van het *NJF*. *tickets* die zonder deze uitdrukkelijke en schriftelijke toestemming van het *NJF* worden doorverkocht, geven geen recht op toegang tot het *festivalterrein*.
+- Tickets en toegangsbewijzen mogen niet worden doorverkocht zonder de uitdrukkelijke en schriftelijke toestemming van het NJF. tickets die zonder deze uitdrukkelijke en schriftelijke toestemming van het NJF worden doorverkocht, geven geen recht op toegang tot het festivalterrein.
 
-- Wijzigingen in het *programma* leiden niet tot een volledige of gedeeltelijke terugbetaling van het *ticket*.
+- Wijzigingen in het programma leiden niet tot een volledige of gedeeltelijke terugbetaling van het ticket.
 
-- De toegang tot het *festivalterrein* kan worden geweigerd en *bezoekers* kunnen van het *festivalterrein* worden verwijderd (zonder recht op terugbetaling van de toegangsprijs) indien een *bezoeker*:
+- De toegang tot het festivalterrein kan worden geweigerd en bezoekers kunnen van het festivalterrein worden verwijderd (zonder recht op terugbetaling van de toegangsprijs) indien een bezoeker:
 
   - onder invloed is van alcohol of drugs;
 
   - in het bezit is van drugs of drugs verhandelt;
 
-  - eerder de toegang was geweigerd tot andere evenementen door het *NJF* of andere autoriteiten;
+  - eerder de toegang was geweigerd tot andere evenementen door het NJF of andere autoriteiten;
 
   - gedrag vertoont of kleding draagt die duidelijk gericht is op de verstoring van de vrede, het uitlokken van of aanzetten tot geweld, haat, woede, discriminatie, enz;
 
-  - het leven van andere *bezoekers* in gevaar brengt;
+  - het leven van andere bezoekers in gevaar brengt;
 
   - in het bezit is van verboden voorwerpen;
 
   - weigert de instructies van beveiligingspersoneel of andere autoriteiten op te volgen;
 
-  - weigert of nalaat de *Algemene Voorwaarden* na te leven.
+  - weigert of nalaat de Algemene Voorwaarden na te leven.
 
 = Veiligheid
 
-- Om veiligheidsredenen behoudt het *NJF* zich het recht voor:
+- Om veiligheidsredenen behoudt het NJF zich het recht voor:
 
-  - om het *festival* te onderbreken of stop te zetten;
+  - om het festival te onderbreken of stop te zetten;
   
-  - om te voorkomen dat *bezoekers* het *festivalterrein* verlaten tot nader order;
+  - om te voorkomen dat bezoekers het festivalterrein verlaten tot nader order;
   
-  - om *bezoekers* te vragen het *festivalterrein* te verlaten;
+  - om bezoekers te vragen het festivalterrein te verlaten;
   
-  - om *bezoekers* de toegang tot het *festivalterrein* te weigeren, zelfs als ze in het bezit zijn van een geldig *toegangsbewijs*.
+  - om bezoekers de toegang tot het festivalterrein te weigeren, zelfs als ze in het bezit zijn van een geldig toegangsbewijs.
 
-- Het is *bezoekers* van het *festival* niet toegestaan:
+- Het is bezoekers van het festival niet toegestaan:
 
-  - om op tenten, hekken, of andere constructies op het *festivalterrein* te klimmen;
+  - om op tenten, hekken, of andere constructies op het festivalterrein te klimmen;
 
   - om in- en uitgangen en nooduitgangen te blokkeren;
 
-  - om zichzelf te vermommen zodat ze onherkenbaar zijn met de bedoeling de rust te verstoren of de veiligheid van de andere *bezoekers* in gevaar te brengen;
+  - om zichzelf te vermommen zodat ze onherkenbaar zijn met de bedoeling de rust te verstoren of de veiligheid van de andere bezoekers in gevaar te brengen;
 
-  - om eten, drinken of andere producten te verkopen zonder de uitdrukkelijke toestemming van het *NJF*;
+  - om eten, drinken of andere producten te verkopen zonder de uitdrukkelijke toestemming van het NJF;
 
   - om te roken op plaatsen waar dit verboden is;
 
@@ -110,13 +115,13 @@
 
   - om decoraties neer te halen, af te breken of te vernielen;
 
-  - om decoraties of ander materiaal dat eigendom is van het *NJF* te stelen.
+  - om decoraties of ander materiaal dat eigendom is van het NJF te stelen.
 
   - om vuur te maken;
 
-- De volgende voorwerpen zijn verboden op het *festivalterrein*:
+- De volgende voorwerpen zijn verboden op het festivalterrein:
 
-  - voorwerpen waarvan het *NJF* en/of het beveiligingspersoneel besluit dat ze een risico vormen voor de andere *bezoekers* van het festival;
+  - voorwerpen waarvan het NJF en/of het beveiligingspersoneel besluit dat ze een risico vormen voor de andere bezoekers van het festival;
 
   - projectielen of explosieven in vaste, vloeibare of gasvorm;
 
@@ -128,6 +133,6 @@
 
 = Overmacht
 
-- Het *NJF* kan het *festival* alleen annuleren of uitstellen in geval van overmacht of indien het *NJF* een andere aantoonbare dwingende reden heeft om het *festival* te annuleren of uit te stellen. Onder overmacht wordt onder meer, maar niet uitsluitend, verstaan: terroristische dreigingen/aanslagen, slechte weersomstandigheden, stakingen, brand, oorlog, overheidsingrijpen, pandemieën, uitval en/of vertraging van technische voorzieningen, uitval en/of vertraging van vervoermiddelen, enz.
+- Het NJF kan het festival alleen annuleren of uitstellen in geval van overmacht of indien het NJF een andere aantoonbare dwingende reden heeft om het festival te annuleren of uit te stellen. Onder overmacht wordt onder meer, maar niet uitsluitend, verstaan: terroristische dreigingen/aanslagen, slechte weersomstandigheden, stakingen, brand, oorlog, overheidsingrijpen, pandemieën, uitval en/of vertraging van technische voorzieningen, uitval en/of vertraging van vervoermiddelen, enz.
 
-- Wanneer het *NJF* zich genoodzaakt ziet om delen van het *festivalterrein* te sluiten, of onderdelen van het *programma* te wijzigen wegens overmacht, leidt niet tot een gedeeltelijke of volledige terugbetaling van het *ticket*.
+- Wanneer het NJF zich genoodzaakt ziet om delen van het festivalterrein te sluiten, of onderdelen van het programma te wijzigen wegens overmacht, leidt niet tot een gedeeltelijke of volledige terugbetaling van het ticket.
