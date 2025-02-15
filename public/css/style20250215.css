@@ -1,0 +1,311 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('DancingScript-VariableFont_wght.ttf');
+}
+
+:root,
+::backdrop {
+  --delft-blue: #29316C;
+  --columbia-blue: #c7d8e5;
+
+  --accent-light: #c7d8e5;
+  --accent-dark: #3d49a6;
+  --accent-hover: #c7d8e5;
+
+  --header-background-color: white;
+  --header-text-color: var(--delft-blue);
+  --header-button-background-color: var(--delft-blue);
+  --header-button-text-color: white;
+  --header-button-text-current-color: var(--accent-light);
+  --header-button-text-hoover-color: var(--accent-light);
+
+  --info-board-background-color: white;
+  --info-board-text-color: var(--delft-blue);
+  --info-board-pre-background-color: #fafafa;
+  --info-board-pre-text-color: #2d2f40;
+  --info-board-table-odd-background-color: #fafafa;
+  --info-board-table-even-background-color: #efefef;
+
+  --info-board-button-background-color: var(--delft-blue);
+  --info-board-button-text-color: white;
+  --info-board-button-text-current-color: var(--accent-light);
+  --info-board-button-text-hoover-color: var(--accent-light);
+
+  --url-color: var(--accent-dark);
+
+  --border-1-url: url(border_1.svg);
+  --border-2-url: url(border_2.svg);
+  --border-3-url: url(border_3.svg);
+  --border-4-url: url(border_4b.svg);
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+
+  :root,
+  ::backdrop {
+    --accent-hover: #3d49a6;
+
+    --header-background-color: var(--delft-blue);
+    --header-text-color: white;
+    --header-button-background-color: white;
+    --header-button-text-color: var(--delft-blue);
+    --header-button-text-current-color: var(--accent-dark);
+    --header-button-text-hoover-color: var(--accent-dark);
+
+    --info-board-background-color: var(--delft-blue);
+    --info-board-text-color: white;
+    --info-board-pre-background-color: #2d2f40;
+    --info-board-pre-text-color: #fafafa;
+    --info-board-table-odd-background-color: #2d2f40;
+    --info-board-table-even-background-color: #232533;
+
+    --info-board-button-background-color: white;
+    --info-board-button-text-color: var(--delft-blue);
+    --info-board-button-text-current-color: var(--accent-dark);
+    --info-board-button-text-hoover-color: var(--accent-dark);
+
+    --url-color: var(--accent-light);
+
+    --border-1-url: url(border_1_dark.svg);
+    --border-2-url: url(border_2_dark.svg);
+    --border-3-url: url(border_3_dark.svg);
+    --border-4-url: url(border_4b_dark.svg);
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures body takes up at least 100% of the viewport height  */
+}
+
+body>main {
+  flex: 1; /* This makes the content area take up all available space, pushing the footer down */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+body>footer {
+  background-color: var(--header-background-color);
+  color: var(--header-text-color);
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+body>header {
+  background-color: var(--header-background-color);
+  color: var(--header-text-color);
+  padding: 0 0.5rem 0.3rem 0.5rem;
+  width: 100%;
+}
+
+body>header>h1 {
+  font-family: 'DancingScript';
+  font-weight: normal;
+  margin: 0rem auto 0.4rem auto;
+}
+
+header>nav a,
+header>nav a:visited {
+  background-color: var(--header-button-background-color);
+  color: var(--header-button-text-color);
+  border-color: transparent;
+}
+
+header>nav a:hover,
+header>nav a[aria-current="page"] {
+  border-color: transparent;
+  color: var(--header-button-text-hoover-color);
+}
+
+@media only screen and (max-width: 720px) {
+  header>nav a,
+  header>nav a:visited {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.3rem 1rem 0.3rem;
+  }
+}
+
+a,
+a:visited {
+  color: var(--url-color);
+}
+
+nav a.current {
+  color: var(--header-button-text-current-color) !important;
+  border-color: var(--header-button-text-current-color) !important;
+}
+
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;  /* Space between icons */
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--url-color);
+  text-align: center;
+}
+
+.icon-link svg {
+  fill: var(--url-color);
+  margin-top: 5px;
+  margin-bottom: 2px;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-link:hover svg {
+  fill: var(--url-color);
+}
+
+
+.info-board {
+  background-color: var(--info-board-background-color);
+/*  position: relative;*/
+  margin-top: 2rem;
+  padding: min(50px, 8vw);
+  z-index: 1;
+  width: min(59.8rem, 95%);
+/*  align-self: center;*/
+}
+
+.border-1 {
+  border-image:
+    var(--border-1-url)
+    49%/min(90px, 13vw)/0
+    stretch;
+}
+
+.border-2 {
+  border-image:
+    var(--border-2-url)
+    20%/min(60px, 9vw)/0
+    round;
+}
+
+.border-3 {
+  border-image:
+    var(--border-3-url)
+    25%/min(75px, 12vw)/0
+    round;
+}
+
+.border-4 {
+  border-image:
+    var(--border-4-url)
+    34%/min(110px, 16vw)/0
+    round;
+}
+
+.info-board h1 {
+  color: var(--info-board-text-color);
+  font-size: 2rem;
+}
+
+.info-board h2 {
+  color: var(--info-board-text-color);
+  font-size: 1.5rem;
+  margin-top: 1.8rem;
+}
+
+.info-board h3 {
+  color: var(--info-board-text-color);
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.info-board p {
+  position: relative;
+  color: var(--info-board-text-color);
+  z-index: 3;
+  margin: 1rem 0;
+/*  text-align: justify;*/
+/*  hyphens: auto*/
+}
+
+.info-board pre {
+  position: relative;
+  color: var(--info-board-pre-text-color);
+  background-color: var(--info-board-pre-background-color);
+  font-size: 1.4rem;
+  z-index: 3;
+  font-family: var(--sans-font);
+}
+
+.info-board ul,
+.info-board ol,
+.info-board header>nav ol {
+  color: var(--info-board-text-color);
+}
+
+.info-board img {
+  width: 20%;
+  min-width: 100px;
+  position: absolute;
+  transform: translateY(-80%);
+  right: 4%;
+  z-index: 2;
+}
+
+.info-board table {
+/*  margin-left: 3%;*/
+  z-index: 3;
+}
+
+.info-board th {
+  background-color: var(--info-board-table-odd-background-color);
+  color: var(--info-board-text-color);
+}
+
+.info-board td {
+  color: var(--info-board-text-color);
+}
+
+.info-board tr:nth-child(odd) {
+  background-color: var(--info-board-table-odd-background-color);
+}
+
+.info-board tr:nth-child(even) {
+  background-color: var(--info-board-table-even-background-color);
+}
+
+
+.info-board-button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-board button {
+    background: var(--info-board-button-background-color);
+    border: 0px solid transparent;
+    color: var(--info-board-button-text-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.info-board button:hover {
+/*  border-color: transparent;*/
+  color: var(--info-board-button-text-hoover-color);
+  background: var(--info-board-button-background-color);
+}
+
+
+.hidden {
+  display: none;
+}

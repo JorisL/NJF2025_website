@@ -10,7 +10,7 @@
     <title>Nederlands Jongleerfestival 2025</title>
     <meta name="description" content="Nederlands Jongleerfestival 2025 - Tickets" />
     <link rel="stylesheet" href="css/simple.css" />
-    <link rel="stylesheet" href="css/style20241102.css" />
+    <link rel="stylesheet" href="css/style20250215.css" />
 
     <link rel="icon" href="/css/icon-32.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="/css/icon-192.png" type="image/png" sizes="192x192" />
@@ -30,9 +30,9 @@
         <a href="tickets.html" class="current">Tickets</a>
         <a href="location.html">Locatie</a>
         <a href="program.html">Programma</a>
-        <!--<a href="faq.html">FAQ</a>-->
-        <a href="about.html">Over ons</a>
-        <a href="contact.html">Contact</a>
+        <a href="about.html">Over NJF</a>
+        <a href="faq.html">FAQ</a>
+        <a href="team.html">Team</a>
         <a href="en/tickets.html">English</a>
       </nav>
       <h1>Nederlands Jongleerfestival 2025</h1>
@@ -41,14 +41,921 @@
     <main>
       <div class="info-board border-4" id="tickets">
         <h1>Tickets</h1>
+
+        <div class="info-board-button-container">
+          <!-- TODO: change to actual URL -->
+          <a href="https://tickets.stichtingnjf.nl/"><button>Bestel tickets</button></a>
+        </div>
+
         <p>
-          Houd je agenda in de gaten, want de kaartverkoop van het Nederlands Jongleerfestival gaat in februari van
-          start! De kaartverkoop zal in verschillende fases verlopen. Hoe eerder je je ticket scoort, hoe meer je
-          bespaart. Mis het niet en maak je klaar voor vier dagen vol jongleren in Waalwijk!
+          Tickets voor het NJF 2025 zijn nu te koop!
+          De kaartverkoop verloopt in fases: hoe eerder je je ticket scoort, hoe meer je bespaart.
+          Daarnaast helpt het ons om een beter beeld te krijgen van het aantal bezoekers,
+          zodat we het festival nóg beter kunnen organiseren.
+        </p>
+        <p>
+          <ul>
+            <li>Eerste fase: t/m 30 maart</li>
+            <li>Tweede fase: van 31 maart t/m 11 mei</li>
+            <li>Derde fase: vanaf 12 mei</li>
+          </ul> 
+        </p>
+        <p>
+          <b>Let op:</b> de campingplekken zijn beperkt!
+          Wil je meerdere dagen blijven en zeker zijn van een plekje?
+          Koop dan snel je ticket en verzeker jezelf van een topfestivalervaring.
         </p>
       </div>
+
+
+      <div class="info-board border-1" id="prices">
+        <h1>Prijzen</h1>
+        <p>
+          De prijzen verschillen per leeftijdscategorie.
+          Bekijk hieronder welke prijs voor jou geldt.
+        </p> 
+
+        <p>
+          <select selected="none" id="age">
+            <option value="none">--Selecteer uw leeftijd--</option>
+            <option value="adult">17+</option>
+            <option value="teen">12-16</option>
+            <option value="kid">5-11</option>
+          </select>
+
+          <select selected="none" id="days">
+            <option value="none">--Selecteer dagen--</option>
+            <option disabled>_________</option>
+            <option value="all">Volledig Festival*</option>
+            <option disabled>_________</option>
+            <option value="thu_sat">Donderdag t/m Zaterdag*</option>
+            <option value="fri_sun">Vrijdag t/m Zondag*</option>
+            <option value="thu_fri">Donderdag + Vrijdag</option>
+            <option value="fri_sat">Vrijdag + Zaterdag*</option>
+            <option value="sat_sun">Zaterdag + Zondag*</option>
+            <option disabled>_________</option>
+            <option value="thu">Dagticket Donderdag</option>
+            <option value="fri">Dagticket Vrijdag</option>
+            <option value="sat">Dagticket Zaterdag</option>
+            <option value="sun">Dagticket Zondag</option>
+          </select>
+        </p>
+
+
+        <!-- Content that will be shown or hidden based on selections -->
+        <div id="adult_all" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€123,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€135,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€147,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="teen_all" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€113,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€125,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€137,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="kid_all" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€61,50</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€67,50</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€73,50</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        
+        <div id="adult_thu_sat" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€107,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€117,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€126,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="teen_thu_sat" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€101,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€111,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€120,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="kid_thu_sat" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€53,50</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€58,50</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€63,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        
+        <div id="adult_fri_sun" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€97,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€107,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€116,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="teen_fri_sun" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€91,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€101,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€110,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="kid_fri_sun" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€48,50</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€53,50</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€58,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        
+        <div id="adult_thu_fri" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€60,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€65,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€71,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="teen_thu_fri" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€54,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€59,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€67,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="kid_thu_fri" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€30,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€32,50</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€35,50</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+
+        <div id="adult_fri_sat" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€81,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€89,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€95,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="teen_fri_sat" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€75,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€83,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€91,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="kid_fri_sat" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€40,50</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€44,50</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€47,50</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+
+        <div id="adult_sat_sun" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€63,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€70,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€76,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="teen_sat_sun" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€57,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€64,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€72,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+        <div id="kid_sat_sun" class="hidden">
+          <p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Fase 1</td>
+                  <td>€31,50</td>
+                </tr>
+                <tr>
+                  <td>Fase 2</td>
+                  <td>€35,-</td>
+                </tr>
+                <tr>
+                  <td>Fase 3 / Deur</td>
+                  <td>€38,-</td>
+                </tr>
+              </tbody>
+            </table> 
+          </p>
+        </div>
+
+
+        <div id="adult_thu" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;21,-</td>
+              </tr>
+              <tr>
+                <td>Deur, inclusief diner</td>
+                <td>&euro;31,-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="teen_thu" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;19,-</td>
+              </tr>
+              <tr>
+                <td>Deur, inclusief diner</td>
+                <td>&euro;29,-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="kid_thu" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;10,50</td>
+              </tr>
+              <tr>
+                <td>Deur, inclusief diner</td>
+                <td>&euro;15,50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div id="adult_fri" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;30,-</td>
+              </tr>
+              <tr>
+                <td>Deur, inclusief diner</td>
+                <td>&euro;40,-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="teen_fri" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;28,-</td>
+              </tr>
+              <tr>
+                <td>Deur, inclusief diner</td>
+                <td>&euro;38,-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="kid_fri" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;15,-</td>
+              </tr>
+              <tr>
+                <td>Deur, inclusief diner</td>
+                <td>&euro;20,-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div id="adult_sat" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;30,-</td>
+              </tr>
+              <tr>
+                <td>Deur, inclusief diner</td>
+                <td>&euro;40,-</td>
+              </tr>
+              <tr>
+                <td>Galashow ticket</td>
+                <td>&euro;15,-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="teen_sat" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;28,-</td>
+              </tr>
+              <tr>
+                <td>Deur, inclusief diner</td>
+                <td>&euro;38,-</td>
+              </tr>
+              <tr>
+                <td>Galashow ticket</td>
+                <td>&euro;13,-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="kid_sat" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;15,-</td>
+              </tr>
+              <tr>
+                <td>Deur, inclusief diner</td>
+                <td>&euro;20,-</td>
+              </tr>
+              <tr>
+                <td>Galashow ticket</td>
+                <td>&euro;7,50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div id="adult_sun" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;21,-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="teen_sun" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;19,-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="kid_sun" class="hidden">
+          <table>
+            <tbody>
+              <tr>
+                <td>Deur, exclusief diner</td>
+                <td>&euro;10,-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <p>*Alle tickets met overnachting die de zaterdag geldig zijn, hebben een galashow ticket</p>
+
+      </div>
+
+
+      <div class="info-board border-2" id="ticket-info">
+        <h1>Ticketinformatie</h1>
+        <h2>Supporttickets</h2>
+        <p>
+          Ook dit jaar bieden we supporttickets aan,
+          een bijzonder soort ticket dat bijdraagt aan het toegankelijk en betaalbaar houden van het festival voor iedereen.
+          Ook draag je met dit ticket bij aan een nog specialer en toffer festival,
+          hierdoor zouden wij bijvoorbeeld net die ene vette galashow artiest kunnen boeken.
+          Je kan de supportprijzen toevoegen tijdens de bestelling van jouw ticket.
+          Je kan kiezen voor een bijdrage van €15, €25 of €50.
+        </p>
+
+        <h2>Dagtickets</h2>
+        <p>
+          Dagtickets worden aan de deur verkocht.
+          Met een dagticket ben je de gehele dag tot middernacht (00:00) toegang tot het festivalterrein.
+          Er kan worden gekozen voor dagtickets met of zonder avondeten.
+          Dagtickets bevatten geen toegang tot de galashow.
+          Tickets voor de galashow worden apart verkocht.
+        </p>
+
+        <h2>Dagtickets voor jeugdcircussen</h2>
+        <p>
+          Als je met je jeugdcircus een dagje het Nederlands Jongleerfestival wilt bezoeken, hebben we goed nieuws!
+          Dit jaar bieden we een speciale korting voor jeugdcircussen.
+          Om in aanmerking te komen, moet je groep bestaan uit minimaal vijf deelnemers:
+          vier jongeren onder de 17 jaar en één begeleider.
+          Bij groepen vanaf tien deelnemers mag er een tweede begeleider mee.
+          Per dag kan er één aanmelding per jeugdcircus worden gedaan.
+          Wil je gebruikmaken van deze korting? Stuur dan een e-mail naar <a href="mailto:2025@nederlandsjongleerfestival.nl">2025@nederlandsjongleerfestival.nl</a> om de tickets aan te vragen.
+        </p>
+
+        <h2>Bezoekerstickets</h2>
+        <p>
+          Als begeleider of toeschouwer kun je bij ons terecht met een toeschouwersticket.
+          Dit ticket geeft je toegang tot de sportkantine van Sporthal de Zeine, waar je kunt ontspannen met een drankje van de bar.
+          Voor deelnemers onder de 16 geldt dat er altijd een begeleider aanwezig moet zijn,
+          dus het is wel de bedoeling dat je in de sporthal aanwezig blijft.
+          Neem gerust een boek of laptop mee en geniet van de gezellige sfeer.
+          Via de grote ramen in de kantine kun je zien wat er in de jongleerzaal gebeurt.
+        </p>
+        <h3>Belangrijk om te weten</h3>
+        <p>
+          <ul>
+            <li>
+              Toeschouwerstickets zijn beschikbaar als de deelnemer minimaal 12 jaar oud is én zelfstandig kan jongleren.
+              Dit is belangrijk omdat jongleren een activiteit is waarbij veel objecten door de lucht vliegen,
+              en we een veilige omgeving willen behouden voor alle bezoekers.
+            </li>
+            <li>
+              Als de deelnemer jonger dan 12 jaar is of het moeilijk vindt om zelfstandig te trainen,
+              vragen we een volwassene om een dagticket aan te schaffen.
+              Met een dagticket heb je toegang tot de zaal en kun je samen jongleren of ondersteunen waar nodig.
+            </li>
+          </ul> 
+        </p>
+
+        <h2>Toestemmingsbrief</h2>
+        <p>
+          Ben je jonger dan 18 jaar en wil je deelnemen aan het NJF?
+          Dan moet je een toestemmingsbrief bij je hebben ondertekend door je ouder of verzorger.
+          Deze is <a href="/assets/toestemmingsbrief.pdf">hier te downloaden</a>.
+        </p>
+
+      </div>
+
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="icon-container">
+        <a href="mailto:2025@nederlandsjongleerfestival.nl", class="icon-link">
+          <svg width="24px" height="24px" viewBox="0 -2.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -922.000000)">
+              <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M262,764.291 L254,771.318 L246,764.281 L246,764 L262,764 L262,764.291 Z M246,775 L246,766.945 L254,773.98 L262,766.953 L262,775 L246,775 Z M244,777 L264,777 L264,762 L244,762 L244,777 Z" id="email-[#1573]"/>
+              </g>
+            </g>
+          </svg>        
+        </a>
+        <a href="https://www.instagram.com/nederlandsjongleerfestival/" class="icon-link">
+          <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"/>
+            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/NederlandsJongleerFestival" class="icon-link">
+          <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"/>
+          </svg>
+        </a>
+      </div>
+
+      <a href="https://tickets.stichtingnjf.nl/wp-content/uploads/2023/09/Algemene-voorwaarden-Nederlands-Jongleer-Festival-v1.3.pdf"> Algemene Voorwaarden</a>
+    </footer> 
   </body>
 </html>
+
+<script>
+  // Get dropdown elements
+  const selectAge = document.getElementById('age');
+  const selectDays = document.getElementById('days');
+
+  // Content divs
+  const content_adult_all = document.getElementById('adult_all');
+  const content_teen_all = document.getElementById('teen_all');
+  const content_kid_all = document.getElementById('kid_all');
+  const content_adult_thu_sat = document.getElementById('adult_thu_sat');
+  const content_teen_thu_sat = document.getElementById('teen_thu_sat');
+  const content_kid_thu_sat = document.getElementById('kid_thu_sat');
+  const content_adult_fri_sun = document.getElementById('adult_fri_sun');
+  const content_teen_fri_sun = document.getElementById('teen_fri_sun');
+  const content_kid_fri_sun = document.getElementById('kid_fri_sun');
+  const content_adult_thu_fri = document.getElementById('adult_thu_fri');
+  const content_teen_thu_fri = document.getElementById('teen_thu_fri');
+  const content_kid_thu_fri = document.getElementById('kid_thu_fri');
+  const content_adult_fri_sat = document.getElementById('adult_fri_sat');
+  const content_teen_fri_sat = document.getElementById('teen_fri_sat');
+  const content_kid_fri_sat = document.getElementById('kid_fri_sat');
+  const content_adult_sat_sun = document.getElementById('adult_sat_sun');
+  const content_teen_sat_sun = document.getElementById('teen_sat_sun');
+  const content_kid_sat_sun = document.getElementById('kid_sat_sun');
+  const content_adult_thu = document.getElementById('adult_thu');
+  const content_teen_thu = document.getElementById('teen_thu');
+  const content_kid_thu = document.getElementById('kid_thu');
+  const content_adult_fri = document.getElementById('adult_fri');
+  const content_teen_fri = document.getElementById('teen_fri');
+  const content_kid_fri = document.getElementById('kid_fri');
+  const content_adult_sat = document.getElementById('adult_sat');
+  const content_teen_sat = document.getElementById('teen_sat');
+  const content_kid_sat = document.getElementById('kid_sat');
+  const content_adult_sun = document.getElementById('adult_sun');
+  const content_teen_sun = document.getElementById('teen_sun');
+  const content_kid_sun = document.getElementById('kid_sun');
+
+  // Event listener for category dropdown change
+  selectAge.addEventListener('change', function() {
+      updateContent();
+  });
+
+  // Event listener for items dropdown change
+  selectDays.addEventListener('change', function() {
+      updateContent();
+  });
+
+  function updateContent() {
+    // Hide all content sections
+    content_adult_all.classList.add('hidden');
+    content_teen_all.classList.add('hidden');
+    content_kid_all.classList.add('hidden');
+    content_adult_thu_sat.classList.add('hidden');
+    content_teen_thu_sat.classList.add('hidden');
+    content_kid_thu_sat.classList.add('hidden');
+    content_adult_fri_sun.classList.add('hidden');
+    content_teen_fri_sun.classList.add('hidden');
+    content_kid_fri_sun.classList.add('hidden');
+    content_adult_thu_fri.classList.add('hidden');
+    content_teen_thu_fri.classList.add('hidden');
+    content_kid_thu_fri.classList.add('hidden');
+    content_adult_fri_sat.classList.add('hidden');
+    content_teen_fri_sat.classList.add('hidden');
+    content_kid_fri_sat.classList.add('hidden');
+    content_adult_sat_sun.classList.add('hidden');
+    content_teen_sat_sun.classList.add('hidden');
+    content_kid_sat_sun.classList.add('hidden');
+    content_adult_thu.classList.add('hidden');
+    content_teen_thu.classList.add('hidden');
+    content_kid_thu.classList.add('hidden');
+    content_adult_fri.classList.add('hidden');
+    content_teen_fri.classList.add('hidden');
+    content_kid_fri.classList.add('hidden');
+    content_adult_sat.classList.add('hidden');
+    content_teen_sat.classList.add('hidden');
+    content_kid_sat.classList.add('hidden');
+    content_adult_sun.classList.add('hidden');
+    content_teen_sun.classList.add('hidden');
+    content_kid_sun.classList.add('hidden');
+
+    // Show relevant sections based on dropdown selections
+    const age = selectAge.value;
+    const days = selectDays.value;
+
+    if ((age === "adult") && (days === "all")) {
+      content_adult_all.classList.remove('hidden');
+    }
+    if ((age === "teen") && (days === "all")) {
+      content_teen_all.classList.remove('hidden');
+    }
+    if ((age === "kid") && (days === "all")) {
+      content_kid_all.classList.remove('hidden');
+    }
+
+    if ((age === "adult") && (days === "thu_sat")) {
+      content_adult_thu_sat.classList.remove('hidden');
+    }
+    if ((age === "teen") && (days === "thu_sat")) {
+      content_teen_thu_sat.classList.remove('hidden');
+    }
+    if ((age === "kid") && (days === "thu_sat")) {
+      content_kid_thu_sat.classList.remove('hidden');
+    }
+
+    if ((age === "adult") && (days === "fri_sun")) {
+      content_adult_fri_sun.classList.remove('hidden');
+    }
+    if ((age === "teen") && (days === "fri_sun")) {
+      content_teen_fri_sun.classList.remove('hidden');
+    }
+    if ((age === "kid") && (days === "fri_sun")) {
+      content_kid_fri_sun.classList.remove('hidden');
+    }
+
+    if ((age === "adult") && (days === "thu_fri")) {
+      content_adult_thu_fri.classList.remove('hidden');
+    }
+    if ((age === "teen") && (days === "thu_fri")) {
+      content_teen_thu_fri.classList.remove('hidden');
+    }
+    if ((age === "kid") && (days === "thu_fri")) {
+      content_kid_thu_fri.classList.remove('hidden');
+    }
+
+    if ((age === "adult") && (days === "fri_sat")) {
+      content_adult_fri_sat.classList.remove('hidden');
+    }
+    if ((age === "teen") && (days === "fri_sat")) {
+      content_teen_fri_sat.classList.remove('hidden');
+    }
+    if ((age === "kid") && (days === "fri_sat")) {
+      content_kid_fri_sat.classList.remove('hidden');
+    }
+
+    if ((age === "adult") && (days === "sat_sun")) {
+      content_adult_sat_sun.classList.remove('hidden');
+    }
+    if ((age === "teen") && (days === "sat_sun")) {
+      content_teen_sat_sun.classList.remove('hidden');
+    }
+    if ((age === "kid") && (days === "sat_sun")) {
+      content_kid_sat_sun.classList.remove('hidden');
+    }
+
+    if ((age === "adult") && (days === "thu")) {
+      content_adult_thu.classList.remove('hidden');
+    }
+    if ((age === "teen") && (days === "thu")) {
+      content_teen_thu.classList.remove('hidden');
+    }
+    if ((age === "kid") && (days === "thu")) {
+      content_kid_thu.classList.remove('hidden');
+    }
+
+    if ((age === "adult") && (days === "fri")) {
+      content_adult_fri.classList.remove('hidden');
+    }
+    if ((age === "teen") && (days === "fri")) {
+      content_teen_fri.classList.remove('hidden');
+    }
+    if ((age === "kid") && (days === "fri")) {
+      content_kid_fri.classList.remove('hidden');
+    }
+
+    if ((age === "adult") && (days === "sat")) {
+      content_adult_sat.classList.remove('hidden');
+    }
+    if ((age === "teen") && (days === "sat")) {
+      content_teen_sat.classList.remove('hidden');
+    }
+    if ((age === "kid") && (days === "sat")) {
+      content_kid_sat.classList.remove('hidden');
+    }
+    
+    if ((age === "adult") && (days === "sun")) {
+      content_adult_sun.classList.remove('hidden');
+    }
+    if ((age === "teen") && (days === "sun")) {
+      content_teen_sun.classList.remove('hidden');
+    }
+    if ((age === "kid") && (days === "sun")) {
+      content_kid_sun.classList.remove('hidden');
+    }
+  }
+</script>
