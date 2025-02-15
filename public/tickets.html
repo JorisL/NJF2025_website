@@ -77,27 +77,28 @@
 
         <p>
           <select selected="none" id="age">
-            <option value="none">--Selecteer uw leeftijd--</option>
+            <option selected hidden disabled>--Selecteer uw leeftijd--</option>
             <option value="adult">17+</option>
             <option value="teen">12-16</option>
             <option value="kid">5-11</option>
           </select>
 
           <select selected="none" id="days">
-            <option value="none">--Selecteer dagen--</option>
-            <option disabled>_________</option>
+            <option selected hidden disabled>--Selecteer dagen--</option>
             <option value="all">Volledig Festival*</option>
-            <option disabled>_________</option>
-            <option value="thu_sat">Donderdag t/m Zaterdag*</option>
-            <option value="fri_sun">Vrijdag t/m Zondag*</option>
-            <option value="thu_fri">Donderdag + Vrijdag</option>
-            <option value="fri_sat">Vrijdag + Zaterdag*</option>
-            <option value="sat_sun">Zaterdag + Zondag*</option>
-            <option disabled>_________</option>
-            <option value="thu">Dagticket Donderdag</option>
-            <option value="fri">Dagticket Vrijdag</option>
-            <option value="sat">Dagticket Zaterdag</option>
-            <option value="sun">Dagticket Zondag</option>
+            <optgroup>
+              <option value="thu_sat">Donderdag t/m Zaterdag*</option>
+              <option value="fri_sun">Vrijdag t/m Zondag*</option>
+              <option value="thu_fri">Donderdag + Vrijdag</option>
+              <option value="fri_sat">Vrijdag + Zaterdag*</option>
+              <option value="sat_sun">Zaterdag + Zondag*</option>
+            </optgroup>
+            <optgroup>
+              <option value="thu">Dagticket Donderdag</option>
+              <option value="fri">Dagticket Vrijdag</option>
+              <option value="sat">Dagticket Zaterdag</option>
+              <option value="sun">Dagticket Zondag</option>
+            </optgroup>
           </select>
         </p>
 
