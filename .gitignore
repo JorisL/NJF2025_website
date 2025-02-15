@@ -5,3 +5,6 @@
 
 ### iOS ###
 .icloud
+
+### Sublime Text ###
+*.sublime-workspace
