@@ -78,6 +78,83 @@
           Je kunt overnachten op de camping die op een paar minuten lopen van de sporthal ligt.
           Wil je liever een dagje komen? Ook dat kan!
         </p>
+
+
+
+
+
+
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="/assets/slideshow/1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/2.jpg" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/3.jpg" alt="Slide 3">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/4.jpg" alt="Slide 4">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/5.jpg" alt="Slide 5">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/6.jpg" alt="Slide 6">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/7.jpg" alt="Slide 7">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/8.jpg" alt="Slide 8">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/9.jpg" alt="Slide 9">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/10.jpg" alt="Slide 10">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/11.jpg" alt="Slide 11">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/12.jpg" alt="Slide 12">
+        </div>
+        <div class="slide">
+            <img src="/assets/slideshow/13.jpg" alt="Slide 13">
+        </div>
+    </div>
+
+
+
+<script type="text/javascript">
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide() {
+    // Hide all slides
+    slides.forEach(slide => slide.style.opacity = 0);
+
+    // Show the current slide
+    slides[currentIndex].style.opacity = 1;
+
+    // Update the current slide index
+    currentIndex = (currentIndex + 1) % slides.length;
+}
+
+// Show the first slide initially
+showSlide();
+
+// Change slides every 3 seconds
+setInterval(showSlide, 3000);
+
+</script>
+
+
+    <p></p>
+
+
       </div>
     </main>
 
