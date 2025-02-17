@@ -311,6 +311,7 @@ video {
   display: none;
 }
 
+
 .team-picture {
   max-width: 100%; /* Makes sure the image doesn't overflow the container */
   height: auto;
@@ -331,13 +332,16 @@ video {
 @media (min-width: 601px) {
     .team-picture img {
         float: left; /* Floats the image to the left */
-        margin-right: 15px; /* Optional margin to space it from text */
-        margin-bottom: 10px; /* Optional margin to avoid text colliding at the bottom */
+        margin-right: 10px; /* Optional margin to space it from text */
+        margin-left: 0px;
+        margin-bottom: 5px; /* Optional margin to avoid text colliding at the bottom */
         width: 40%;
     }
 
     .floating-right img {
       float: right;
+      margin-right: 0px;
+      margin-left: 10px;
     }
 }
 
@@ -372,10 +376,10 @@ video {
 
 
 .sponsor-gallery {
-    display: flex; /* Enables flexbox layout */
-    justify-content: center; /* Distribute images with equal space between them */
-    flex-wrap: wrap; /* Allow items to wrap to a new line */
-    gap: 20px; /* Optional gap between images */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     width: 100%; /* Set the width of the container */
     padding-bottom: 20px;
 }
