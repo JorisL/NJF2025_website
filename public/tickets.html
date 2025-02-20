@@ -42,15 +42,45 @@
       <div class="info-board border-4" id="tickets">
         <h1>Tickets</h1>
 
-<!--         <div class="info-board-button-container">
-          <a href="https://tickets.stichtingnjf.nl/"><button>Bestel tickets</button></a>
+        <div id="afterDiv">
+          <div class="info-board-button-container">
+            <a href="https://tickets.stichtingnjf.nl/product-categorie/njf-2025/"><button>Bestel tickets</button></a>
+          </div>
+          <p>
+            Tickets voor het NJF 2025 zijn nu te koop!
+          </p>
         </div>
- -->
-        <p>
-          <!-- Tickets voor het NJF 2025 zijn nu te koop! -->
-          De ticketverkoop voor het NJF gaat 22 februari van start!
-          <br><br>
 
+        <div id="beforeDiv">
+          <p>
+            De ticketverkoop voor het NJF gaat 22 februari om 12:00 van start!
+          </p>
+        </div>
+
+        <script>
+          // Set the specific date and time in GMT+1
+          const targetDate = new Date('2025-02-22T12:00:00+01:00'); // GMT+1 time zone
+
+          // Get the current time
+          const currentDate = new Date();
+
+          // Get the elements for the "before" and "after" messages
+          const beforeDiv = document.getElementById('beforeDiv');
+          const afterDiv = document.getElementById('afterDiv');
+
+          if (currentDate < targetDate) {
+            // If the current date is before the target date
+            beforeDiv.classList.remove('hidden');  // Show the "before" message
+            afterDiv.classList.add('hidden'); // Hide the "after" message
+          } else {
+            // If the current date is after the target date
+            beforeDiv.classList.add('hidden'); // Hide the "before" message
+            afterDiv.classList.remove('hidden');  // Show the "after" message
+          }
+        </script>
+
+
+        <p>
           De kaartverkoop verloopt in fases: hoe eerder je je ticket scoort, hoe meer je bespaart.
           Daarnaast helpt het ons om een beter beeld te krijgen van het aantal bezoekers,
           zodat we het festival nóg beter kunnen organiseren.
@@ -68,6 +98,7 @@
           Koop dan snel je ticket en verzeker jezelf van een topfestivalervaring.
         </p>
       </div>
+
 
 
       <div class="info-board border-1" id="prices">
@@ -967,3 +998,4 @@
     }
   }
 </script>
+

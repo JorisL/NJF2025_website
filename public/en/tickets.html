@@ -42,15 +42,44 @@
       <div class="info-board border-4" id="tickets">
         <h1>Tickets</h1>
 
-<!--         <div class="info-board-button-container">
-          <a href="https://tickets.stichtingnjf.nl/"><button>Bestel tickets</button></a>
+        <div id="afterDiv">
+          <div class="info-board-button-container">
+            <a href="https://tickets.stichtingnjf.nl/product-categorie/njf-2025/"><button>Order tickets</button></a>
+          </div>
+          <p>
+            Tickets for the NJF 2025 are now for sale!
+          </p>
         </div>
- -->
-        <p>
-          <!-- Tickets voor het NJF 2025 zijn nu te koop! -->
-          The ticket sale starts on the 22nd of February!
-          <br><br>
 
+        <div id="beforeDiv">
+          <p>
+            The ticket sale starts on the 22nd of February, at 12:00!
+          </p>
+        </div>
+
+        <script>
+          // Set the specific date and time in GMT+1
+          const targetDate = new Date('2025-02-22T12:00:00+01:00'); // GMT+1 time zone
+
+          // Get the current time
+          const currentDate = new Date();
+
+          // Get the elements for the "before" and "after" messages
+          const beforeDiv = document.getElementById('beforeDiv');
+          const afterDiv = document.getElementById('afterDiv');
+
+          if (currentDate < targetDate) {
+            // If the current date is before the target date
+            beforeDiv.classList.remove('hidden');  // Show the "before" message
+            afterDiv.classList.add('hidden'); // Hide the "after" message
+          } else {
+            // If the current date is after the target date
+            beforeDiv.classList.add('hidden'); // Hide the "before" message
+            afterDiv.classList.remove('hidden');  // Show the "after" message
+          }
+        </script>
+
+        <p>
           Ticket sales are in phases: the sooner you
           score your ticket, the more you save. Besides, it helps us to get a better idea of the
           number of visitors, so we can organize the festival even better.
