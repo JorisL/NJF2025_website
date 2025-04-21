@@ -183,7 +183,7 @@ video {
   margin-top: 2rem;
   padding: min(50px, 8vw);
   z-index: 1;
-  width: min(59.8rem, 95%);
+  width: min(64.0rem, 95%);
 /*  align-self: center;*/
 }
 
@@ -388,4 +388,38 @@ video {
     height: 100px; /* All images will have the same height */
     object-fit: cover; /* Ensures the images cover the area without distortion */
     width: auto; /* Let the width adjust based on the height */
+}
+
+
+.program-text-box-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.program-text-box {
+  flex: 1;
+  min-width: 200px; /* controls when it starts wrapping */
+  padding: 0px;
+}
+
+/* Stack them vertically on small screens */
+@media (max-width: 768px) {
+  .program-text-box-container {
+    flex-direction: column;
+  }
+}
+
+.program-table {
+  border-collapse: collapse;
+}
+
+.program-table td,
+.program-table th {
+  background-color: var(--info-board-background-color);
+  color: var(--info-board-text-color);
+  border: none;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  line-height: 1; /* optional: makes text tighter vertically */
 }
