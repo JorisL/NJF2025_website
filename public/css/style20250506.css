@@ -375,19 +375,31 @@ video {
 }
 
 
-.sponsor-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%; /* Set the width of the container */
-    padding-bottom: 20px;
+.logo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between logos */
+    padding: 20px; /* Padding around the container */
 }
 
-.sponsor-gallery img {
-    height: 100px; /* All images will have the same height */
-    object-fit: cover; /* Ensures the images cover the area without distortion */
-    width: auto; /* Let the width adjust based on the height */
+.logo {
+    border: 0px solid #ccc; /* Optional: border for logos */
+    border-radius: 5px; /* Optional: rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+
+@media (prefers-color-scheme: dark) {
+    .logo {
+        background-color: var(--info-board-pre-text-color); /* White background in dark mode */
+    }
+}
+
+.logo img {
+  width: 100%; /* Make image take full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 
